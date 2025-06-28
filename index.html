@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <img class="header__logo" src="img/logo.png" alt="Логотип LUXSOFA">
+<nav class="menu">
+  <ul class="menu__list">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="top fade-in">
+    <div class="top__inner">
+      <div class="container">
+        <div class="top__content">
+          <div class="top__text">
+            <h1 class="top__title">LUXSOFA</h1>
+            <p class="top__subtitle">Когда комфорт становится частью интерьера</p>
+          </div>
+          <img class="top__img" src="img/castle.png" alt="Интерьер" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info fade-in">
+    <div class="info__container">
+      <h2 class="info__title">Добро пожаловать в LUXSOFA</h2>
+      <p class="info__text">Мы предлагаем качественную мягкую мебель по доступным ценам. Узнайте больше прямо сейчас!</p>
+      <a href="catalog.html" class="info__btn">Перейти в каталог</a>
+    </div>
+  </section>
+
+  <section class="swiper__swip">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/Chat1.png" alt="Галерея 1" loading="lazy">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Chat2.png" alt="Галерея 2" loading="lazy">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Chat3.png" alt="Галерея 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="products fade-in">
+    <div class="products__container">
+      <div class="filter">
+        <select id="categoryFilter">
+          <option value="all">Все</option>
+          <option value="premium">Премиум</option>
+          <option value="eco">Эконом</option>
+        </select>
+      </div>
+    
+
+
+      <div class="product-card" data-category="premium">
+        <img src="img/Chat1.png" alt="Товар 1">
+        <h3>Товар 1</h3>
+        <p>1 200 ₽</p>
+        <button onclick="addToCart('Товар 1', 1200)">Купить</button>
+      </div>
+
+      <div class="product-card" data-category="eco">
+        <img src="img/Chat2.png" alt="Товар 2">
+        <h3>Товар 2</h3>
+        <p>950 ₽</p>
+        <button onclick="addToCart('Товар 2', 950)">Купить</button>
+      </div>
+      <div class="product-card" data-category="eco">
+        <img src="img/Chat3.png" alt="Товар 3">
+        <h3>Товар 3</h3>
+        <p>780 ₽</p>
+        <button onclick="addToCart('Товар 3', 780)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="fade-in">
+    <div class="container">git remote add origin https://github.com/kostolom777luxsofa.git
+      <h2 class="info__title">Отзывы</h2>
+      <div class="products__container">
+        <div class="product-card">
+          <p><strong>Ирина</strong></p>
+          <p>Очень довольна качеством дивана и быстрой доставкой!</p>
+        </div>
+        <div class="product-card">
+          <p><strong>Алексей</strong></p>
+          <p>Мебель стильная, удобная и по разумной цене. Рекомендую!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacts" class="footer fade-in">
+    <div class="footer__container">
+      <div class="footer__info">
+        <h3 class="footer__title">Связаться с нами</h3>
+        <p class="footer__sabtitle">Есть вопросы? Напишите нам!</p>
+        <form class="footer__form">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <textarea placeholder="Ваше сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__text">LUXSOFA</h3>
+        <img class="footer__logo" src="img/logo.png" alt="Логотип LUXSOFA">
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn">Наверх</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
